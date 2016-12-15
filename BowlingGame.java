@@ -45,17 +45,11 @@ public class BowlingGame {
 	}
 	
 	private boolean isSpare(int i) {
-		if (rolls[i]+rolls[i+1] == MAXPINS)
-			return true;
-		else 
-			return false;
+			return (rolls[i]+rolls[i+1] == MAXPINS);
 	}
 	
 	private boolean isStrike(int i) {
-		if (rolls[i] == MAXPINS || rolls[i + 1] == MAXPINS)
-			return true;
-		else 
-			return false;
+			return (rolls[i] == MAXPINS || rolls[i + 1] == MAXPINS);
 	}
 	
 	private int strike(int i) {
